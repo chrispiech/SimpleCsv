@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: simplecsv
+Version: 0.2
+Summary: A tool for students working with CSVs
+Home-page: http://stanford.edu/~cpiech/
+Author: Chris Piech
+Author-email: piech@cs.stanford.edu
+License: UNKNOWN
+Description: # SimpleTable
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+simplecsv
+simplecsv/SimpleCsv.py
+simplecsv/__init__.py
+simplecsv.egg-info/PKG-INFO
+simplecsv.egg-info/SOURCES.txt
+simplecsv.egg-info/dependency_links.txt
+simplecsv.egg-info/top_level.txt
