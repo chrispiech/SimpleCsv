@@ -22,14 +22,25 @@ MISSING_VALUE = ''
 
 class SimpleCsv:
 
-	def __init__(self, file_name = None):
+	def __init__(self, file_name = None, has_header = True):
 		if not file_name:
 			self.col_names = []
 			self.rows = []
 			return
+
 		reader = csv.reader(open(file_name))
-		self.col_names = next(reader)
+		first_line = next(reader)
 		self.rows = []
+
+		if has_header:
+			self.col_names = first_line
+		else:
+			n = len(first_line)
+			# ['col 1', 'col 2', 'col 3' ... ]
+			self.col_names = ['col ' + str(i) for i in range(n)]
+			# we still need to process the first row
+			datum = self._make_datum(first_line)
+			self.rows.append(datum)
 		for row in reader:
 			datum = self._make_datum(row)
 			self.rows.append(datum)
